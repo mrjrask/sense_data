@@ -773,4 +773,5 @@ echo
 echo "IMPORTANT: The API intentionally listens only on 127.0.0.1."
 echo "Do not expose port ${API_PORT} directly to the internet."
 echo
-echo "Next: verify /api/current, then we can add the secure ChatGPT-facing layer."
+echo "Next: verify the local API from this host:"
+echo "  curl -s http://127.0.0.1:${API_PORT}/api/current | python3 -m json.tool"
